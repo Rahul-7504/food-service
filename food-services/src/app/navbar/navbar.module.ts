@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,

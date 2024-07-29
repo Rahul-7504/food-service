@@ -1,0 +1,31 @@
+.background-container {
+    background-image: url('../../../assets/img6.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top:15%;
+    height: 85vh; /* Full viewport height */
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .select-set{
+    height: 7vh;
+    width: 20%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: none;
+  }
+
+  .search-set{
+    height: 7vh;
+    width: 40%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+   
+  }
+
+ 
+  
+  
