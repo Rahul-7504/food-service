@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
+import { FoodsComponent } from './foods/foods.component';
+import { OrderNowComponent } from './order-now/order-now.component';
 
 
 
@@ -14,7 +16,9 @@ import { AddRestaurantComponent } from './add-restaurant/add-restaurant.componen
     HomeComponent,
     ContactUsComponent,
     LoginComponent,
-    AddRestaurantComponent
+    AddRestaurantComponent,
+    FoodsComponent,
+    OrderNowComponent
   ],
   imports: [
     CommonModule,
