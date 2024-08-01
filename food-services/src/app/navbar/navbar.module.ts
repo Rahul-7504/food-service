@@ -20,7 +20,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddRestaurantComponent,
     FoodsComponent,
     OrderNowComponent,
-
   ],
   imports: [
     CommonModule,

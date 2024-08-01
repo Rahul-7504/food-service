@@ -1,43 +1,54 @@
-<div class="container">
-    <div class="col-sm-4 offset-sm-4 mt-5 border border-secondary p-3">
-        <div class="ml-2 mb-4">
-            <h4>Login</h4>
+<div class=" background-container">
+    <div class="col-sm-4  p-5 colorin">
+        <div class="ml-2 mb-4 text-center">
+            <b>LOGIN</b>
         </div>
-        <div class="input-container">
-            <span class="input-box input-box-left font-weight-bold">
-                <img src="../../../assets/img7.webp" height="25" width="25" alt="">
-                +91
-            </span>
-            <input class="input-box input-box-right font-weight-bold " type="search" placeholder="Phone Number">
-        </div>
-        <div class="text-center my-4">
-            <h5>OTP</h5>
-        </div>
-        <div class="d-flex flex-row bd-highlight justify-content-center">
-            <div class="p-2 bd-highlight">
-                <input type="text" class="form-control otp-input" maxlength="1">
-            </div>
-            <div class="p-2 bd-highlight">
-                <input type="text" class="form-control otp-input" maxlength="1">
-            </div>
-            <div class="p-2 bd-highlight">
-                <input type="text" class="form-control otp-input" maxlength="1">
-            </div>
-            <div class="p-2 bd-highlight">
-                <input type="text" class="form-control otp-input" maxlength="1">
-            </div>
-            <div class="p-2 bd-highlight">
-                <input type="text" class="form-control otp-input" maxlength="1">
-            </div>
-            <div class="p-2 bd-highlight">
-                <input type="text" class="form-control otp-input" maxlength="1">
-            </div>
-        </div>
-        <div class="text-center mt-5">
-            <button class="btn btn_color font-weight-bold">Login</button>
+        <div>
+            <form [formGroup]="loginForm">
+                <div class="input-container">
+                    <span class="input-box input-box-left font-weight-bold">
+                        <img src="../../../assets/img7.webp" height="25" width="25" alt="">
+                        +91
+                    </span>
+
+                    <input class="input-box input-box-right font-weight-bold " type="search"
+                        formControlName="phonenumber" placeholder="Phone Number">
+                    <div *ngIf="submittedloginForm && f['phonenumber'].hasError('required')">
+                        Phone Number is required.
+                    </div>
+
+                </div>
+                <div class="text-center my-4">
+                    <h5>OTP</h5>
+                </div>
+                <div class="d-flex flex-row bd-highlight justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <input type="text" class="form-control otp-input" maxlength="1">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input type="text" class="form-control otp-input" maxlength="1">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input type="text" class="form-control otp-input" maxlength="1">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input type="text" class="form-control otp-input" maxlength="1">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input type="text" class="form-control otp-input" maxlength="1">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input type="text" class="form-control otp-input" maxlength="1">
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button type="submit" class="btn btn_color font-weight-bold" (click)="onSubmit()">Login</button>
+                </div>
+            </form>
         </div>
         <div class="text-center pt-5">
-            <p class="font-weight-bold">New to Food Services?  <strong class="create_account_text">Create Account</strong></p>
+            <p class="font-weight-bold">New to Food Services? <strong class="create_account_text">Create
+                    Account</strong></p>
         </div>
     </div>
 </div>
