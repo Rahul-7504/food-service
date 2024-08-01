@@ -1,3 +1,14 @@
+
+    .background-container {
+        background-image: url('../../../assets/top-view-arrangement-with-salad-boxes-sauce_23-2148247882.avif');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding-top: 15%;
+        height: 100vh;
+       
+    }
+
 .otp-input {
     width: 40px;
     text-align: center;
@@ -5,16 +16,17 @@
 }
 
 .btn_color {
-    background-color: orange;
-    color: white;
+    background-color:black;
+    color:white;
     border: none;
     box-shadow: 5px;
     padding: 5px 15px 5px 15px;
+    
 }
 
-.offset-sm-3 {
-    padding-left: 20px;
-}
+// .offset-sm-3 {
+//     padding-left: 20px;
+// }
 
 .contact_box {
     height: 5vh;
@@ -50,4 +62,17 @@
 }
 .create_account_text{
     color: orangered;
+}
+.bgimage{
+    height: 100%;
+    width: 100%;
+}
+.colorin{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid grey;
+    position: relative;
+    left:50px;
+    height: 100%;
+    bottom:150px;
+  
 }
