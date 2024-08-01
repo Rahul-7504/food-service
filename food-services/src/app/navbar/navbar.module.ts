@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
 import { FoodsComponent } from './foods/foods.component';
 import { OrderNowComponent } from './order-now/order-now.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,11 +19,13 @@ import { OrderNowComponent } from './order-now/order-now.component';
     LoginComponent,
     AddRestaurantComponent,
     FoodsComponent,
-    OrderNowComponent
+    OrderNowComponent,
+
   ],
   imports: [
     CommonModule,
-    NavbarRoutingModule
+    NavbarRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class NavbarModule { }
