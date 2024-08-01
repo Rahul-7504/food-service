@@ -1,7 +1,7 @@
 .otp-input {
-    width: 50px;
-    font-size: 1.5rem;
+    width: 40px;
     text-align: center;
+    border: 1px solid black;
 }
 
 .btn_color {
@@ -16,6 +16,38 @@
     padding-left: 20px;
 }
 
+.contact_box {
+    height: 5vh;
+    width: 20%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: none;
+}
+
 .phone-number-input {
     width: 95%;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.input-box {
+    border: 1px solid black;
+    padding: 10px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.input-box-left {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.input-box-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 75%;
+}
+.create_account_text{
+    color: orangered;
 }
