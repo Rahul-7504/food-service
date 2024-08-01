@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { FoodsComponent } from './foods/foods.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { OrderNowComponent } from './order-now/order-now.component';
+import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
    },
    {
     path:'orderNow',component:OrderNowComponent
+   },
+   {
+    path:'add-restaurant',component:AddRestaurantComponent
    }
 ];
 
