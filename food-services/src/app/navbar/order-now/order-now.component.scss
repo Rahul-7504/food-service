@@ -1,0 +1,25 @@
+
+.product_img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.food_order_btn{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px;
+    padding: 5px 15px 5px 15px;
+   
+}
