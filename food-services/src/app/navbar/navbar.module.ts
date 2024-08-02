@@ -9,6 +9,7 @@ import { AddRestaurantComponent } from './add-restaurant/add-restaurant.componen
 import { FoodsComponent } from './foods/foods.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -24,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     NavbarRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgSelectModule
   ]
 })
 export class NavbarModule { }

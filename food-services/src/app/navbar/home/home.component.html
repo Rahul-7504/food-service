@@ -1,15 +1,14 @@
-
 <div class="background-container">
     <div>
-        <h1 class="text-light text-center"><b>Descover the Best Food & Drinks</b></h1>
-
+      <h1 class="text-light text-center"><b>Food Services</b></h1>
+      <h1 class="text-light text-center"><b>Discover the Best Food & Drinks</b></h1>
     </div>
     <div class="text-center mt-5">
-        <select class="select-set pl-5">
-            <option>Sangamner</option>
-            <option>Nashik</option>
-            <option>Pune</option>
-        </select>
-        <input class="search-set pl-5" type="search" placeholder="Search Restaurant & Dish">
+      <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
+        <ng-select formControlName="location" class="select-set pl-5" [items]="locations" bindLabel="name" placeholder="Select a location">
+        </ng-select>
+        <input class="search-set pl-5 pr-5" type="search" formControlName="search" placeholder="Search Restaurant & Dish">
+      </form>
     </div>
-</div>
+  </div>
+  
