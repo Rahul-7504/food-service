@@ -1,13 +1,29 @@
 
-    .background-container {
-        background-image: url('../../../assets/various-vegetables-black-table-with-space-message_1220-616.avif');
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        padding-top: 15%;
-        height: 92vh;
-       
-    }
+
+
+.background-container {
+    background-image: url('../../../assets/various-vegetables-black-table-with-space-message_1220-616.avif');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background-color: #fff;
+    border: 3px solid black;
+    padding: 20px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease-in-out;
+}
 
 .otp-input {
     width: 40px;
@@ -16,63 +32,48 @@
 }
 
 .btn_color {
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
     border: none;
-    box-shadow: 5px;
-    padding: 9px 17px 9px 17px;
-    
+    padding: 9px 17px;
+    margin-top: 20px;
 }
 
-
-
-.contact_box {
-    height: 5vh;
-    width: 20%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-right: none;
-}
-
-.phone-number-input {
-    width: 95%;
-}
-.input-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
 .input-box {
     border: 1px solid black;
+    border-radius: 10px;
     padding: 10px;
     height: 40px;
     box-sizing: border-box;
 }
-.input-box-left {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-.input-box-right {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    width: 100%;
-}
-.create_account_text{
+
+.create_account_text {
     color: orangered;
 }
-.bgimage{
-    height: 100%;
-    width: 100%;
-}
-.colorin{
-    background-color:rgb(255, 255, 255);
-    border: 3px solid black;
-    position: relative;
-    left:50px;
-    height: 100%;
-    bottom:150px;
-}
-.error-red{
+
+.error-red {
     color: red;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.cross_btn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 14px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: rgb(211, 207, 207);
+}
+
+.number_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.phone_number_input {
+    width: 70%;
+    margin-right: 10px;
 }
