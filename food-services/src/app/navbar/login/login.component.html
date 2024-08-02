@@ -1,56 +1,49 @@
-<div class=" background-container">
-    <div class="col-sm-4   p-2 colorin">
-        <div class="ml-2 mb- font25 text-center">
-            <b>LOGIN</b>
+
+<div class="background-container">
+    <div class="login-box">
+        <div class="ml-2 text-center">
+            <h3 class="font-weight-bold">LOGIN</h3>
         </div>
         <div>
-            <form [formGroup]="loginForm">
-                <div class="input-container">
-                    <!-- <span class="input-box input-box-left font-weight-bold">
-                        <img class="mb-2" src="../../../assets/img7.webp" height="25" width="25" alt="">
-                        +91
-                    </span> -->
-                    <div>
-                        <input class="input-box input-box-right font-weight-bold " type="search"
-                            formControlName="phonenumber" placeholder="Phone Number">
-                           
-                    </div>
-                    <div *ngIf="submittedloginForm && f['phonenumber'].hasError('required')">
-                        Phone Number is required.
-                    </div>`
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="number_btn">
+                    <input class="input-box font-weight-bold phone_number_input" formControlName="phonenumber" placeholder="Phone Number">
+                    <button class="cross_btn active font-weight-bold" type="button" (click)="onSubmit()">></button>
                 </div>
-
+                <div *ngIf="submittedloginForm && f['phonenumber'].errors?.['required']" class="error-red">
+                    Phone Number is required.
+                </div>
                 <div class="text-center my-4">
-                    <b class="font25">OTP</b>
+                    <h4 class="font-weight-bold">OTP</h4>
                 </div>
-                <div class="d-flex flex-row bd-highlight justify-content-center">
-                    <div class="p-2 ">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
                     <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 ">
+                    <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 ">
+                    <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 ">
+                    <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
                     <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
                 </div>
-                <div class="text-center mt-3 ">
-                    <button type="submit" class="btn btn_color font-weight-bold" (click)="onSubmit()">Login</button>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn_color font-weight-bold">Login</button>
                 </div>
             </form>
         </div>
         <div class="text-center pt-5">
-            <p class="font-weight-bold">New to Food Services? <strong class="create_account_text">Create
-                    Account</strong></p>
+            <p class="font-weight-bold">New to Food Services? <strong class="create_account_text">Create Account</strong></p>
         </div>
     </div>
 </div>
+
