@@ -1,47 +1,49 @@
 <div class=" background-container">
-    <div class="col-sm-4  p-2 colorin">
-        <div class="ml-2 mb-4 text-center">
-           <h3>LOGIN</h3>
+    <div class="col-sm-4   p-2 colorin">
+        <div class="ml-2 mb- font25 text-center">
+            <b>LOGIN</b>
         </div>
         <div>
             <form [formGroup]="loginForm">
                 <div class="input-container">
-                    <span class="input-box input-box-left font-weight-bold">
-                        <img src="../../../assets/img7.webp" height="25" width="25" alt="">
+                    <!-- <span class="input-box input-box-left font-weight-bold">
+                        <img class="mb-2" src="../../../assets/img7.webp" height="25" width="25" alt="">
                         +91
-                    </span>
-
-                    <input class="input-box input-box-right font-weight-bold " type="search"
-                        formControlName="phonenumber" placeholder="Phone Number">
+                    </span> -->
+                    <div>
+                        <input class="input-box input-box-right font-weight-bold " type="search"
+                            formControlName="phonenumber" placeholder="Phone Number">
+                           
+                    </div>
                     <div *ngIf="submittedloginForm && f['phonenumber'].hasError('required')">
                         Phone Number is required.
-                    </div>
-
+                    </div>`
                 </div>
+
                 <div class="text-center my-4">
-                    <h5>OTP</h5>
+                    <b class="font25">OTP</b>
                 </div>
                 <div class="d-flex flex-row bd-highlight justify-content-center">
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 ">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 ">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 ">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 ">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2">
                         <input type="text" class="form-control otp-input" maxlength="1">
                     </div>
                 </div>
-                <div class="text-center mt-5">
+                <div class="text-center mt-3 ">
                     <button type="submit" class="btn btn_color font-weight-bold" (click)="onSubmit()">Login</button>
                 </div>
             </form>
