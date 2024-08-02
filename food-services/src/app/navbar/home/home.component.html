@@ -5,9 +5,7 @@
     </div>
     <div class="text-center mt-5">
       <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
-        <ng-select formControlName="location" class="select-set pl-5" [items]="locations" bindLabel="name" placeholder="Select a location">
-        </ng-select>
-        <input class="search-set pl-5 pr-5" type="search" formControlName="search" placeholder="Search Restaurant & Dish">
+        <input class="search-set pl-5 pr-5" type="search" formControlName="search" placeholder="🔍  Search Restaurant">
       </form>
     </div>
   </div>

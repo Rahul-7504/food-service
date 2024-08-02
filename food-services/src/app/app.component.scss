@@ -3,4 +3,26 @@
 }
 .nav-item a {
     color: white;
+
 }
+
+.setBtn {
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.setBtn:hover {
+    background-color:orange; 
+}
+
+.setBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+

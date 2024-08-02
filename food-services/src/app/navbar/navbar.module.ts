@@ -26,7 +26,6 @@ import { NgSelectModule } from '@ng-select/ng-select';
     CommonModule,
     NavbarRoutingModule,
     ReactiveFormsModule,
-    NgSelectModule
   ]
 })
 export class NavbarModule { }
