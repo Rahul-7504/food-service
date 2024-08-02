@@ -1,6 +1,6 @@
 
     .background-container {
-        background-image: url('../../../assets/top-view-arrangement-with-salad-boxes-sauce_23-2148247882.avif');
+        background-image: url('../../../assets/various-vegetables-black-table-with-space-message_1220-616.avif');
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -20,13 +20,11 @@
     color:white;
     border: none;
     box-shadow: 5px;
-    padding: 5px 15px 5px 15px;
+    padding: 9px 17px 9px 17px;
     
 }
 
-// .offset-sm-3 {
-//     padding-left: 20px;
-// }
+
 
 .contact_box {
     height: 5vh;
@@ -58,7 +56,7 @@
 .input-box-right {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 75%;
+    width: 100%;
 }
 .create_account_text{
     color: orangered;
@@ -74,4 +72,7 @@
     left:50px;
     height: 100%;
     bottom:150px;
+}
+.error-red{
+    color: red;
 }
