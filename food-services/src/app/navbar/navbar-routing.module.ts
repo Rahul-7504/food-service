@@ -6,6 +6,7 @@ import { FoodsComponent } from './foods/foods.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
+import { FoodTemplateComponent } from './food-template/food-template.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
    },
    {
     path:'add-restaurant',component:AddRestaurantComponent
+   },
+   {
+    path:'food-template',component:FoodTemplateComponent
    }
 ];
 
