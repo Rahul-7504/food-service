@@ -1,1 +1,30 @@
-<p>food-template works!</p>
+<div class="container-fluid">
+    <form  [formGroup]="productForm">
+    <div class="row">
+        <div class="col-6">
+            <div>
+                <label class="font16 my-0" for="">Enter Product Name</label>
+            </div>
+            <input class="form-control" type="text" placeholder="Enter Product Name" formControlName="productName" [ngClass]="{'is-invalid':submitted && formOrder?.productName?.errors}">
+            <div *ngIf="submitted && formOrder?.productName?.errors" class="invalid-feedback">
+                <div *ngIf="submitted && formOrder?.productName?.errors?.required">Enter Product Name</div>
+            </div>
+
+            <label class="font16 mt-3" for="">Add Product Img</label>
+            
+           
+      </div>
+        <div class="col-6">
+            <div>
+                <label class="font16 my-0" for="">Enter Product Price</label>
+            </div>
+            <input class="form-control" type="number" placeholder="Enter Product Price" formControlName="productPrice" [ngClass]="{'is-invalid':submitted && formOrder?.productPrice?.errors}">
+            <div *ngIf="submitted && formOrder?.productPrice?.errors" class="invalid-feedback">
+                <div *ngIf="submitted && formOrder?.productPrice?.errors?.required">Enter Product Price</div>
+            </div>
+        </div>
+    </div>
+    <button (click)="saveData()" class="btn_submit_save mr-4">save</button>
+     <button (click)="clearData()" class="btn_submit_save">cancel</button>
+</form>
+</div>
