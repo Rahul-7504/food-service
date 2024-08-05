@@ -9,26 +9,30 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AddRestaurantComponent {
 
-  loginForm: any = FormGroup;
-  constructor(private fb:FormBuilder){
-    this.loginForm=this.fb.group({
-      ownerName: ['',  [Validators.required, Validators.pattern('^[A-Za-z ]*$'), Validators.minLength(2)]],
-      hotelName: ['', Validators.required, Validators.pattern('^[A-Za-z ]*$')],
-      hostelName: ['', Validators.required, Validators.pattern('^[A-Za-z ]*$')],
-      hotel: ['', Validators.required, Validators.pattern('^[A-Za-z ]*$')],
-      contactNumber: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
-      hotelRegisterNumber: ['', Validators.required,Validators.pattern('^[0-9]*$')],
-    })
+  userForm:any= FormGroup;
+  submitted=false;
+  constructor(private fb: FormBuilder) {
+    this.userForm = this.fb.group({
+     OwnerName: ['', [Validators.required,Validators.pattern("[a-zA-Z]+$")]],
+     HotelName: ['', [Validators.required,Validators.pattern("[a-zA-Z]+$")]],
+     HotelLocation: ['', [Validators.required,Validators.pattern("[a-zA-Z]+$")]],
+     Hotel: ['', [Validators.required,Validators.pattern("[a-zA-Z]+$")]],
+     contactNumber: ['', [Validators.required,Validators.pattern("[a-zA-Z]+$")]],
+     hotelRegisterNumber: ['', [Validators.required,Validators.pattern("[a-zA-Z]+$")]],
+    });
   }
-  onsubmit(){
-    this.loginForm.value;
-  }
-  preventNumericInput(event: KeyboardEvent) {
-    const charCode = event.charCode;
-    if (charCode >= 48 && charCode <= 57) { // ASCII codes for 0-9
-      event.preventDefault();
+  submit() {
+    this.submitted=true;
+    if (this.userForm.valid) {
+      console.log(this.userForm.value);
+      alert('SUBMIT SUCCESSFULLY!');
+      return
     }
   }
+
+
+
+
 
 }
 
