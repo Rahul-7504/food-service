@@ -10,6 +10,7 @@ import { FoodsComponent } from './foods/foods.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodTemplateComponent } from './food-template/food-template.component';
 
@@ -24,6 +25,7 @@ import { FoodTemplateComponent } from './food-template/food-template.component';
     AddRestaurantComponent,
     FoodsComponent,
     OrderNowComponent,
+    SignUpComponent,
     FoodTemplateComponent,
   
   ],
