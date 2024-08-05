@@ -1,53 +1,91 @@
-<div class="container">
 
-  <h4>Register</h4>
+<div class="background mt-5 pt-4" >
+<div class="mt-5 ">
 
-  <form [formGroup]="loginForm" (ngSubmit)="onsubmit()">
-    <div>
-      <input type="text" formControlName="ownerName"[minlength]="3" class="mt-1" placeholder="Owner Name"pattern="[A-Za-z ]*" (keypress)="preventNumericInput($event)" />
-      <div    *ngIf="loginForm.get('ownerName').invalid && loginForm.get('ownerName').touched"style="color: red;" >
-        Owner Name is required.
-
+<form [formGroup]="userForm" class="set_form_data bg-light">
+  <h4 class="card-title text-center" >Register</h4>
+  <div>
+    <input type="text" id="OwnerName" formControlName="OwnerName" placeholder="Owner Name"
+      [ngClass]="{'is-invalid': submitted && userForm.controls.OwnerName.errors}">
+    <div *ngIf="submitted && userForm.controls.OwnerName.errors" class="invalid-feedback">
+      <div *ngIf="userForm.controls.OwnerName.errors.required" style="color: red;">
+        Owner Name is required
+      </div>
+      <div *ngIf="userForm.controls.OwnerName.errors.pattern" style="color: red;">
+        Only alphabet letters are allowed
       </div>
     </div>
+  </div>
 
-    <div>
-      <input type="text" formControlName="hotelName"[minlength]="3" class="mt-3" placeholder="Hotel Name" pattern="[A-Za-z ]*"(keypress)="preventNumericInput($event)" />
-      <div *ngIf="loginForm.get('hotelName').invalid && loginForm.get('hotelName').touched"style="color: red;">
-        Hotel Name is required.
+
+
+  <div>
+    <input type="text" id="HotelName" formControlName="HotelName" placeholder="Hotel Name"
+      [ngClass]="{'is-invalid': submitted && userForm.controls.HotelName.errors}">
+    <div *ngIf="submitted && userForm.controls.HotelName.errors" class="invalid-feedback">
+      <div *ngIf="userForm.controls.HotelName.errors.required" style="color: red;">
+        Hotel Name is required
+      </div>
+      <div *ngIf="userForm.controls.HotelName.errors.pattern" style="color: red;">
+        Only alphabet letters are allowed
       </div>
     </div>
+  </div>
 
-    <div>
-      <input type="text" formControlName="hostelName"[minlength]="3" class="mt-3" placeholder="Hotel Location"pattern="[A-Za-z ]*" (keypress)="preventNumericInput($event)" />
-      <div *ngIf="loginForm.get('hostelName').invalid && loginForm.get('hostelName').touched"style="color: red;">
-        Hotel Location is required.
+  <div>
+    <input type="text" id="HotelLocation" formControlName="HotelLocation" placeholder="Hotel Location"
+      [ngClass]="{'is-invalid': submitted && userForm.controls.HotelLocation.errors}">
+    <div *ngIf="submitted && userForm.controls.HotelLocation.errors" class="invalid-feedback">
+      <div *ngIf="userForm.controls.HotelLocation.errors.required" style="color: red;">
+        Hotel Location is required
+      </div>
+      <div *ngIf="userForm.controls.HotelLocation.errors.pattern" style="color: red;">
+        Only alphabet letters are allowed
       </div>
     </div>
+  </div>
 
-    <div>
-      <input type="text" formControlName="hotel"[minlength]="3" class="mt-3" placeholder="Hotel" pattern="[A-Za-z ]*"(keypress)="preventNumericInput($event)" />
-      <div *ngIf="loginForm.get('hotel').invalid && loginForm.get('hotel').touched"style="color: red;">
-        Hotel is required.
+  <div>
+    <input type="text" id="Hotel" formControlName="Hotel" placeholder="Hotel"
+      [ngClass]="{'is-invalid': submitted && userForm.controls.Hotel.errors}">
+    <div *ngIf="submitted && userForm.controls.Hotel.errors" class="invalid-feedback">
+      <div *ngIf="userForm.controls.Hotel.errors.required" style="color: red;">
+        Hotel is required
+      </div>
+      <div *ngIf="userForm.controls.Hotel.errors.pattern" style="color: red;">
+        Only alphabet letters are allowed
       </div>
     </div>
+  </div>
 
-    <div>
-      <input type="text" formControlName="contactNumber"[maxlength]="10"[minlength]="10"  class="mt-3" placeholder="Contact Number" />
-      <div *ngIf="loginForm.get('contactNumber').invalid && loginForm.get('contactNumber').touched"style="color: red;">
-        Contact Number is required and should be a valid number.
+  <div>
+    <input type="text" id="contactNumber" formControlName="contactNumber" placeholder="Contact Number"
+      [ngClass]="{'is-invalid': submitted && userForm.controls.contactNumber.errors}">
+    <div *ngIf="submitted && userForm.controls.contactNumber.errors" class="invalid-feedback">
+      <div *ngIf="userForm.controls.contactNumber.errors.required" style="color: red;">
+        Contact Number is required
+      </div>
+      <div *ngIf="userForm.controls.contactNumber.errors.pattern" style="color: red;">
+        Contact Number should be exactly 10 digits
       </div>
     </div>
+  </div>
 
-
-    <div>
-      <input type="text" formControlName="hotelRegisterNumber" class="mt-3" placeholder="Hotel Register Number" />
-      <div *ngIf="loginForm.get('hotelRegisterNumber').invalid && loginForm.get('hotelRegisterNumber').touched"style="color: red;">
-        Hotel Register Number is required and should be a valid number.
+  <div>
+    <input type="text" id="hotelRegisterNumber" formControlName="hotelRegisterNumber" placeholder="Hotel Register Number"
+      [ngClass]="{'is-invalid': submitted && userForm.controls.hotelRegisterNumber.errors}">
+    <div *ngIf="submitted && userForm.controls.hotelRegisterNumber.errors" class="invalid-feedback">
+      <div *ngIf="userForm.controls.hotelRegisterNumber.errors.required" style="color: red;">
+        Hotel Register Number is required
+      </div>
+      <div *ngIf="userForm.controls.hotelRegisterNumber.errors.pattern" style="color: red;">
+        Only numbers are allowed
       </div>
     </div>
+  </div>
 
-    <button type="submit" class="btn-submit " style="margin-top: 5% ;">Register</button>
-  </form>
+  <button type="submit" (click)="submit()"style="margin-left: 35%;">Register</button>
+
+</form>
 </div>
-
+</div>
