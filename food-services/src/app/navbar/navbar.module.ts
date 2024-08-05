@@ -11,6 +11,9 @@ import { OrderNowComponent } from './order-now/order-now.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FoodTemplateComponent } from './food-template/food-template.component';
+
 
 
 
@@ -23,6 +26,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     FoodsComponent,
     OrderNowComponent,
     SignUpComponent,
+    FoodTemplateComponent,
+  
   ],
   imports: [
     CommonModule,

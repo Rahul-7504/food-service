@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'navbar/contactUs', pathMatch: 'full' },
   { path: '', redirectTo: 'navbar/orderNow', pathMatch: 'full' },
   { path: '', redirectTo: 'navbar/signUp', pathMatch: 'full' }
+  { path: '', redirectTo: 'navbar/foodTemplate', pathMatch: 'full' },
 ];
 
 @NgModule({

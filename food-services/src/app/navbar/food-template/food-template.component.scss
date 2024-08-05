@@ -1,0 +1,22 @@
+.font16 {
+    font-size: 16px;
+  }
+  .btn_submit_save {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top:10%;
+    // padding-top: 5px;
+    // margin-bottom: 20px;
+    font-weight: bold;
+    width: 70px !important;
+    border: none;
+    outline: none;
+    border: 1px solid #C9CADA;
+    background-color: #CACCEA;
+    // border-radius: 3px !important;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
