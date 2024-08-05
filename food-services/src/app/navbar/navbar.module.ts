@@ -10,6 +10,7 @@ import { FoodsComponent } from './foods/foods.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 
@@ -21,6 +22,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
     AddRestaurantComponent,
     FoodsComponent,
     OrderNowComponent,
+    SignUpComponent,
   ],
   imports: [
     CommonModule,
