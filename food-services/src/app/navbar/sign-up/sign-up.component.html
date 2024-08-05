@@ -1,5 +1,5 @@
 <div class="background-img">
-  <div class="form-top">
+  <div class="form-top ">
     <form [formGroup]="userForm" class="set_form_data form-container">
       <div class="margin_bottom">
         <label for="fullName" class="display_block_margin_bottom">Full Name : </label>
@@ -44,7 +44,9 @@
         
       </div>
   
-      <button type="button" (click)="submit()" class="button_style">Submit</button>
+      <div class="text-center mt-4 ">
+        <button type="button" (click)="submit()" class="button_style font-weight-bold">Submit</button>
+      </div>
     </form>
   </div>
 </div>
