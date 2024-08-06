@@ -1,91 +1,103 @@
+<div class="background mt-5 pt-4">
+  <div class="mt-5 ">
 
-<div class="background mt-5 pt-4" >
-<div class="mt-5 ">
+    <form [formGroup]="userForm" class="set_form_data bg-light">
+      <h4 class="card-title text-center">Register</h4>
+      <div>
+        <input type="text" id="OwnerName"oninput="this.value = this.value.replace(/[^a-zA-Z ]/g,'')" formControlName="OwnerName" placeholder="Owner Name"
+          [ngClass]="{'is-invalid': submitted && userForm.controls.OwnerName.errors}">
+        <div *ngIf="submitted && userForm.controls.OwnerName.errors" class="invalid-feedback">
+          <div *ngIf="userForm.controls.OwnerName.errors.required" style="color: red;">
+            Owner Name is required
+          </div>
+          <div *ngIf="userForm.controls.OwnerName.errors.pattern" style="color: red;">
+            Only alphabet letters are allowed
+          </div>
+          <div *ngIf="userForm.controls.OwnerName.errors.onlySpaces" style="color: red;">
+            Owner Name cannot be only spaces
+          </div>
+        </div>
+      </div>
 
-<form [formGroup]="userForm" class="set_form_data bg-light">
-  <h4 class="card-title text-center" >Register</h4>
-  <div>
-    <input type="text" id="OwnerName" formControlName="OwnerName" placeholder="Owner Name"
-      [ngClass]="{'is-invalid': submitted && userForm.controls.OwnerName.errors}">
-    <div *ngIf="submitted && userForm.controls.OwnerName.errors" class="invalid-feedback">
-      <div *ngIf="userForm.controls.OwnerName.errors.required" style="color: red;">
-        Owner Name is required
+
+
+      <div>
+        <input type="text" id="HotelName" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g,'')" formControlName="HotelName" placeholder="Hotel Name"
+          [ngClass]="{'is-invalid': submitted && userForm.controls.HotelName.errors}">
+        <div *ngIf="submitted && userForm.controls.HotelName.errors" class="invalid-feedback">
+          <div *ngIf="userForm.controls.HotelName.errors.required" style="color: red;">
+            Hotel Name is required
+          </div>
+          <div *ngIf="userForm.controls.HotelName.errors.pattern" style="color: red;">
+            Only alphabet letters are allowed
+          </div>
+          <div *ngIf="userForm.controls.OwnerName.errors.onlySpaces" style="color: red;">
+            Owner Name cannot be only spaces
+          </div>
+        </div>
       </div>
-      <div *ngIf="userForm.controls.OwnerName.errors.pattern" style="color: red;">
-        Only alphabet letters are allowed
+
+      <div>
+        <input type="text" id="HotelLocation" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g,'')" formControlName="HotelLocation" placeholder="Hotel Location"
+          [ngClass]="{'is-invalid': submitted && userForm.controls.HotelLocation.errors}">
+        <div *ngIf="submitted && userForm.controls.HotelLocation.errors" class="invalid-feedback">
+          <div *ngIf="userForm.controls.HotelLocation.errors.required" style="color: red;">
+            Hotel Location is required
+          </div>
+          <div *ngIf="userForm.controls.HotelLocation.errors.pattern" style="color: red;">
+            Only alphabet letters are allowed
+          </div>
+          <div *ngIf="userForm.controls.OwnerName.errors.onlySpaces" style="color: red;">
+            Owner Name cannot be only spaces
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div>
+        <input type="text" id="Hotel" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g,'')" formControlName="Hotel" placeholder="Hotel speciality"
+          [ngClass]="{'is-invalid': submitted && userForm.controls.Hotel.errors}">
+        <div *ngIf="submitted && userForm.controls.Hotel.errors" class="invalid-feedback">
+          <div *ngIf="userForm.controls.Hotel.errors.required" style="color: red;">
+            Hotel is required
+          </div>
+          <div *ngIf="userForm.controls.Hotel.errors.pattern" style="color: red;">
+            Only alphabet letters are allowed
+          </div>
+          <div *ngIf="userForm.controls.OwnerName.errors.onlySpaces" style="color: red;">
+            Owner Name cannot be only spaces
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <input type="text" id="contactNumber" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="contactNumber" placeholder="Contact Number"
+          [ngClass]="{'is-invalid': submitted && userForm.controls.contactNumber.errors}">
+        <div *ngIf="submitted && userForm.controls.contactNumber.errors" class="invalid-feedback">
+          <div *ngIf="userForm.controls.contactNumber.errors.required" style="color: red;">
+            Contact Number is required
+          </div>
+          <div *ngIf="userForm.controls.contactNumber.errors.pattern" style="color: red;">
+            Contact Number should be exactly 10 digits
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <input type="text" id="hotelRegisterNumber" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="hotelRegisterNumber"
+          placeholder="Hotel Register Number"
+          [ngClass]="{'is-invalid': submitted && userForm.controls.hotelRegisterNumber.errors}">
+        <div *ngIf="submitted && userForm.controls.hotelRegisterNumber.errors" class="invalid-feedback">
+          <div *ngIf="userForm.controls.hotelRegisterNumber.errors.required" style="color: red;">
+            Hotel Register Number is required
+          </div>
+          <div *ngIf="userForm.controls.hotelRegisterNumber.errors.pattern" style="color: red;">
+            Contact Number should be exactly 10 digits
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" (click)="submit()" style="margin-left: 35%; ">Register</button>
+
+    </form>
   </div>
-
-
-
-  <div>
-    <input type="text" id="HotelName" formControlName="HotelName" placeholder="Hotel Name"
-      [ngClass]="{'is-invalid': submitted && userForm.controls.HotelName.errors}">
-    <div *ngIf="submitted && userForm.controls.HotelName.errors" class="invalid-feedback">
-      <div *ngIf="userForm.controls.HotelName.errors.required" style="color: red;">
-        Hotel Name is required
-      </div>
-      <div *ngIf="userForm.controls.HotelName.errors.pattern" style="color: red;">
-        Only alphabet letters are allowed
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <input type="text" id="HotelLocation" formControlName="HotelLocation" placeholder="Hotel Location"
-      [ngClass]="{'is-invalid': submitted && userForm.controls.HotelLocation.errors}">
-    <div *ngIf="submitted && userForm.controls.HotelLocation.errors" class="invalid-feedback">
-      <div *ngIf="userForm.controls.HotelLocation.errors.required" style="color: red;">
-        Hotel Location is required
-      </div>
-      <div *ngIf="userForm.controls.HotelLocation.errors.pattern" style="color: red;">
-        Only alphabet letters are allowed
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <input type="text" id="Hotel" formControlName="Hotel" placeholder="Hotel"
-      [ngClass]="{'is-invalid': submitted && userForm.controls.Hotel.errors}">
-    <div *ngIf="submitted && userForm.controls.Hotel.errors" class="invalid-feedback">
-      <div *ngIf="userForm.controls.Hotel.errors.required" style="color: red;">
-        Hotel is required
-      </div>
-      <div *ngIf="userForm.controls.Hotel.errors.pattern" style="color: red;">
-        Only alphabet letters are allowed
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <input type="text" id="contactNumber" formControlName="contactNumber" placeholder="Contact Number"
-      [ngClass]="{'is-invalid': submitted && userForm.controls.contactNumber.errors}">
-    <div *ngIf="submitted && userForm.controls.contactNumber.errors" class="invalid-feedback">
-      <div *ngIf="userForm.controls.contactNumber.errors.required" style="color: red;">
-        Contact Number is required
-      </div>
-      <div *ngIf="userForm.controls.contactNumber.errors.pattern" style="color: red;">
-        Contact Number should be exactly 10 digits
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <input type="text" id="hotelRegisterNumber" formControlName="hotelRegisterNumber" placeholder="Hotel Register Number"
-      [ngClass]="{'is-invalid': submitted && userForm.controls.hotelRegisterNumber.errors}">
-    <div *ngIf="submitted && userForm.controls.hotelRegisterNumber.errors" class="invalid-feedback">
-      <div *ngIf="userForm.controls.hotelRegisterNumber.errors.required" style="color: red;">
-        Hotel Register Number is required
-      </div>
-      <div *ngIf="userForm.controls.hotelRegisterNumber.errors.pattern" style="color: red;">
-        Only numbers are allowed
-      </div>
-    </div>
-  </div>
-
-  <button type="submit" (click)="submit()"style="margin-left: 35%;">Register</button>
-
-</form>
-</div>
 </div>
