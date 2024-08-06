@@ -7,6 +7,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { FoodTemplateComponent } from './food-template/food-template.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: 'signUp', component: SignUpComponent
+  },
+  {
+    path: 'food-template', component: FoodTemplateComponent
   }
 ];
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./food-template.component.scss']
 })
 export class FoodTemplateComponent {
- 
+ @Output() closeSiderbar = new EventEmitter<boolean>();
+ @Input() isEditMember:any;
+ @Input() selectedMemberDetails:any;
+
     
   productForm:any=FormGroup
   constructor(private fb:FormBuilder){
@@ -28,5 +31,8 @@ export class FoodTemplateComponent {
   clearData(){
 
   }
+  // closeSiderbar(){
+  //   this.closeSiderbar.emit(true);
+  // }
   
 }

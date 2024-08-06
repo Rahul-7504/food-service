@@ -1,9 +1,9 @@
 <div class="container-fluid bg-dark">
     <div  >
-        <button class="margin5" (click)="gothrough()"><b>Add Food</b></button>
+        <button class="margin5" (click)="openplan()" ><b>Add Food</b></button>
     </div>
 
-<div class="row  pt-5 ">
+<div class="row pt-5 ">
    
     <div class="col-sm-3">
         <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
@@ -106,5 +106,12 @@
             </div>
         </div>
     </div>
+</div>
+<div *ngIf="showSidenar">
+    <div class="sidepanel sidepanel_member_list" id="openSidepanel">
+        <app-food-template [isEditMember]="isEditMember" (closeSiderbar)="closeSiderbar"></app-food-template>
+
+    </div>
+
 </div>
 </div>
