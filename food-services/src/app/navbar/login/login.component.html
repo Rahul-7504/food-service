@@ -1,4 +1,4 @@
- <div class="background-container">
+<div class="background-container">
     <div class="login-box">
         <div class="ml-2 text-center">
             <h3 class="font-weight-bold">LOGIN</h3>
@@ -9,7 +9,7 @@
                     <div class="number_btn">
                         <input class="input-box font-weight-bold phone_number_input" formControlName="phonenumber"
                             placeholder="Phone Number" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g,'')">
-                        <button class="cross_btn active font-weight-bold" (click)="changePhoneNumber()" type="button">  {{ isHideshow ? '>' : '>' }}</button>
+                        <button class="cross_btn active" (click)="changePhoneNumber()" type="button">  {{ isHideshow ? '>' : '>' }}</button>
                     </div>
                     <div *ngIf="phonenumber && phonenumber.invalid && phonenumber.touched" class="error-red">
                         Phone Number is required and must be 10 digits.
@@ -47,7 +47,7 @@
             </form>
         </div>
         <div class="text-center pt-5">
-            <p class="font-weight-bold">New to Food Services? <strong class="create_account_text">Create
+            <p class="font-weight-bold">New to Food Services? <strong class="create_account_text" routerLink="/navbar/add-restaurant" routerLinkActive="active" >Create
                     Account</strong></p>
         </div>
     </div>
