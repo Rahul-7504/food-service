@@ -16,7 +16,8 @@ export class FoodTemplateComponent {
   constructor(private fb:FormBuilder){
     this.productForm=this.fb.group({
       productName:['',Validators.required],
-      productPrice:['',Validators.required]
+      productPrice:['',Validators.required],
+      imgUpload:['',Validators.required]
       
     })
   }
@@ -29,10 +30,36 @@ export class FoodTemplateComponent {
     console.log(this.productForm.value);
   }
   clearData(){
-
+   this.productForm=false
   }
-  // closeSiderbar(){
-  //   this.closeSiderbar.emit(true);
-  // }
-  
+  selectedFile?: File;
+  imagePreview?: string | ArrayBuffer;
+ 
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      this.handleFile(input.files[0]);
+    }
+  }
+  onDrop(event: DragEvent): void {
+    event.preventDefault();
+    if (event.dataTransfer?.files && event.dataTransfer.files.length > 0) {
+      this.handleFile(event.dataTransfer.files[0]);
+    }
+  }
+ 
+  onDragOver(event: DragEvent): void {
+    event.preventDefault();
+  }
+ 
+  private handleFile(file: File): void {
+    this.selectedFile = file;
+ 
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imagePreview = reader.result ?? undefined; // Ensure result is not null
+    };
+    reader.readAsDataURL(file);
+  }
 }
+
