@@ -61,5 +61,8 @@ export class FoodTemplateComponent {
     };
     reader.readAsDataURL(file);
   }
+  CloseSiderbar() {
+    this.closeSiderbar.emit(true);
+  }
 }
 

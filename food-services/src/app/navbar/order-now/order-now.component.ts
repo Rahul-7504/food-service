@@ -30,7 +30,7 @@ this.openplan()
 setTimeout(()=>{
   let p:any = document?.getElementById('openSidepanel');
   if(p){
-    p.style.width = '465px';
+    p.style.width = '520px';
   }
 },10);
   }

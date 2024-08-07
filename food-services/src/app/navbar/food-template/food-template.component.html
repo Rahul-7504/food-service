@@ -1,15 +1,25 @@
-<div class="container-fluid">
-    <h2 class="mt-2">Add Product</h2>
+<div class="container-fluid p-4">
+
+    <div>
+     <div class="d-flex justify-content-between">
+        <p class="mt-2 mb-0 pb-0" style="font-size: 18px;"><b>Add Product</b> </p>
+      <i (click)="CloseSiderbar()" class="fa-solid fa-circle-xmark " style="cursor: pointer;"></i> 
+
+     </div>
+        <p style="font-size: 12px;" class="mt-0 pt-0">We can add food template hare</p>
+    </div>
+
+    <hr style="background-color: white;">
     <form [formGroup]="productForm">
         <div class="row mt-4">
             <div class="col-6">
                 <div>
-                    <label class="font16 my-0" for="">Enter Product Name</label>
+                    <label class="font16 " for="">Enter Product Name</label>
                 </div>
-                <input class="form-control input" type="text" placeholder="Enter Product Name" formControlName="productName"
+                <input class="form-control input" type="text" style="border: none; box-shadow: none;" placeholder="Enter Product Name" formControlName="productName"
                     [ngClass]="{'is-invalid':submitted && formOrder?.productName?.errors}">
                 <div *ngIf="submitted && formOrder?.productName?.errors" class="invalid-feedback">
-                    <div *ngIf="submitted && formOrder?.productName?.errors?.required">Enter Product Name</div>
+                    <div *ngIf="submitted && formOrder?.productName?.errors?.required" style="font-weight: 800;"> Product Name is required</div>
                 </div>
 
                 <label class="font16 mt-3" for="">Add Product Img</label>
@@ -18,7 +28,8 @@
                     <input type="file" formControlName="imgUpload" (change)="onFileSelected($event)" accept="image/*" style="display: none;"
                         #fileInput  [ngClass]="{'is-invalid':submitted &&formOrder?.imgUpload?.errors}"/>
                     <div *ngIf="!imagePreview" class="upload-text">
-                        <p>Drag & drop an image here</p>
+                        <!-- <p>Drag & drop an image here</p> -->
+                        <img src="../../../assets//profile image.jpeg" height="120px" width="120px"  alt="">
                     </div>
                     
                     <div *ngIf="imagePreview" class="image-preview">
@@ -27,7 +38,7 @@
                    
                 </div>
                 <div *ngIf="submitted && formOrder?.imgUpload?.errors" class="invalid-feedback">
-                    <div *ngIf="submitted && formOrder?.imgUpload?.errors?.required">Please Upload Img</div>
+                    <div *ngIf="submitted && formOrder?.imgUpload?.errors?.required" style="font-weight: 800;">Please Upload Img</div>
                   </div>
 
 
@@ -36,17 +47,19 @@
             </div>
             <div class="col-6">
                 <div>
-                    <label class="font16 my-0" for="">Enter Product Price</label>
+                    <label class="font16" for="">Enter Product Price</label>
                 </div>
-                <input class="form-control input" type="number" placeholder="Enter Product Price"
+                <input class="form-control input" type="number" style="border: none; box-shadow: none;" placeholder="Enter Product Price"
                     formControlName="productPrice"
                     [ngClass]="{'is-invalid':submitted && formOrder?.productPrice?.errors}">
                 <div *ngIf="submitted && formOrder?.productPrice?.errors" class="invalid-feedback">
-                    <div *ngIf="submitted && formOrder?.productPrice?.errors?.required">Enter Product Price</div>
+                    <div *ngIf="submitted && formOrder?.productPrice?.errors?.required" style="font-weight: 800;"> Product Price is required</div>
                 </div>
             </div>
         </div>
+
         <div class="btn-footer">
+            
         <button (click)="saveData()" class="btn_submit_save mr-4">save</button>
         <button (click)="clearData()" class="btn_submit_save">cancel</button>
     </div>
