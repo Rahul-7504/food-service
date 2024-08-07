@@ -5,7 +5,10 @@
     </div>
     <div class="text-center mt-5">
       <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
-        <input class="search-set pl-4 pr-5" type="search" formControlName="search" placeholder="🔍  Search Restaurant">
+        <div class="input-container">
+          <img src="../../../assets/search.webp" class="ml-4" alt="icon">
+        <input class="search-set" type="search" formControlName="search" placeholder="Search Restaurant">
+      </div>
       </form>
     </div>
   </div>
