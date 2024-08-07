@@ -30,7 +30,9 @@ export class FoodTemplateComponent {
     console.log(this.productForm.value);
   }
   clearData(){
-   this.productForm=false
+   this.productForm.reset();
+   this.imagePreview = undefined; 
+   this.selectedFile = undefined
   }
   selectedFile?: File;
   imagePreview?: string | ArrayBuffer;
