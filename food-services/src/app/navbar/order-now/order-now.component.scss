@@ -32,6 +32,10 @@
     border-radius: 5px;
     background-color: orange;
 }
+.margin6{
+    position: relative;
+    margin-top: 190px !important;
+}
 .sidepanel {
     width: 0;
     position: fixed;
@@ -54,4 +58,11 @@
     .sidepanel_member_list {
       max-height: 100vh;
     }
+}
+.fixed{
+    position: absolute;
+    top: 90px;
+    color: white;
+    font-weight: 800;
+
 }
