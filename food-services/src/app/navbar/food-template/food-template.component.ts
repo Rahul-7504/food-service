@@ -31,38 +31,25 @@ export class FoodTemplateComponent {
   }
   clearData(){
    this.productForm.reset();
-   this.imagePreview = undefined; 
-   this.selectedFile = undefined
+   this.imageUrl=null;
   }
-  selectedFile?: File;
-  imagePreview?: string | ArrayBuffer;
- 
+
+  imageUrl: string | ArrayBuffer | null = null;
+
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
-    if (input.files && input.files.length > 0) {
-      this.handleFile(input.files[0]);
+    if (input.files && input.files[0]) {
+      const file = input.files[0];
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        this.imageUrl = reader.result;
+      };
+
+      reader.readAsDataURL(file);
     }
   }
-  onDrop(event: DragEvent): void {
-    event.preventDefault();
-    if (event.dataTransfer?.files && event.dataTransfer.files.length > 0) {
-      this.handleFile(event.dataTransfer.files[0]);
-    }
-  }
- 
-  onDragOver(event: DragEvent): void {
-    event.preventDefault();
-  }
- 
-  private handleFile(file: File): void {
-    this.selectedFile = file;
- 
-    const reader = new FileReader();
-    reader.onload = () => {
-      this.imagePreview = reader.result ?? undefined; // Ensure result is not null
-    };
-    reader.readAsDataURL(file);
-  }
+  
   CloseSiderbar() {
     this.closeSiderbar.emit(true);
   }
