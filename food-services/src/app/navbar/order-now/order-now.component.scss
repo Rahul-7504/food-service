@@ -8,6 +8,8 @@
     text-align: center; 
 }
 
+
+
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -24,11 +26,9 @@
    
 }
 .margin5{
-    position: relative;
-    left: 92%;
+    
     color: white;
     height: 40px;
-    margin-top: 90px;
     border-radius: 5px;
     background-color: orange;
 }
@@ -60,9 +60,15 @@
     }
 }
 .fixed{
-    position: absolute;
-    top: 90px;
+    
     color: white;
     font-weight: 800;
 
+}
+
+.set_Line{
+    // style="display: flex;justify-content: space-between; color: white;  " 
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
