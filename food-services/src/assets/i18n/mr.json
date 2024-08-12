@@ -1,0 +1,21 @@
+{
+    "FOOD_SERVICES":" खाद्य सेवा",
+    "ADD_PRODUCT": "उत्पादन जोडा",
+    "ADD_FOOD_TEMPLATE": "आम्ही येथे खाद्य टेम्पलेट जोडू शकतो",
+    "ENTER_PRODUCT_NAME": "उत्पादनाचे नाव प्रविष्ट करा",
+    "ADD_PRODUCT_IMG": "उत्पादन चित्र जोडा",
+    "ENTER_PRODUCT_PRICE": "उत्पादनाची किंमत प्रविष्ट करा",
+    "LANGUAGE":"भाषा",
+    "ENGLISH":"इंग्रजी",
+    "MARATHI":"मराठी",
+    "HINDI":"हिंदी",
+    "SAVE": "जतन करा",
+    "CANCEL": "रद्द करा",
+    "HOME": "मुख्यपृष्ठ",
+    "REGISTER_RESTAURANT": "रेस्टॉरंट नोंदणी करा",
+    "LOGIN": "लॉगिन",
+    "FOOD": "अन्न",
+    "CONTACT_US": "आमच्याशी संपर्क साधा",
+    "ORDER_NOW": "आता ऑर्डर करा"
+  }
+  

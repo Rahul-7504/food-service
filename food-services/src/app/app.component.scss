@@ -6,6 +6,18 @@
     color: white;
 
 }
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.dropdown-menu-right {
+    right: 0;
+}
+
 
 .setBtn {
     border-radius: 15px;
