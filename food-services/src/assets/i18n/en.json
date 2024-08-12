@@ -1,0 +1,20 @@
+{
+    "FOOD_SERVICES":"FOOD_SERVICES",
+    "ADD_PRODUCT": "Add Product",
+    "ADD_FOOD_TEMPLATE": "We can add food template here",
+    "ENTER_PRODUCT_NAME": "Enter Product Name",
+    "ADD_PRODUCT_IMG": "Add Product Img",
+    "ENTER_PRODUCT_PRICE": "Enter Product Price",
+    "LANGUAGE":"Language",
+    "ENGLISH":"Engilsh",
+    "MARATHI":"Marathi",
+    "HINDI":"Hindi",
+    "SAVE": "Save",
+    "CANCEL": "Cancel",
+    "HOME": "Home",
+    "REGISTER_RESTAURANT": "Register Restaurant",
+    "LOGIN": "Login",
+    "FOOD": "Food",
+    "CONTACT_US": "Contact Us",
+    "ORDER_NOW": "Order Now"
+  }

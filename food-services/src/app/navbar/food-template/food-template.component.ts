@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-food-template',
@@ -13,14 +14,19 @@ export class FoodTemplateComponent {
 
     
   productForm:any=FormGroup
-  constructor(private fb:FormBuilder){
+  constructor(private fb:FormBuilder,private translate: TranslateService){
     this.productForm=this.fb.group({
       productName:['',Validators.required],
       productPrice:['',Validators.required],
-      imgUpload:['',Validators.required]
+      imgUpload:['',Validators.required],
+     
       
     })
   }
+  
+
+
+
   submitted=false
   get formOrder(){
       return this.productForm.controls;
@@ -53,5 +59,9 @@ export class FoodTemplateComponent {
   CloseSiderbar() {
     this.closeSiderbar.emit(true);
   }
+
+  
+
+
 }
 
