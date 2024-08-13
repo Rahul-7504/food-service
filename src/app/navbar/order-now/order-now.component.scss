@@ -1,0 +1,74 @@
+
+.product_img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.food_order_btn{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px;
+    padding: 5px 15px 5px 15px;
+   
+}
+.margin5{
+    
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    background-color: orange;
+}
+.margin6{
+    position: relative;
+    margin-top: 190px !important;
+}
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    transition: 0.7s;
+    height: 104vh;
+    box-shadow: 4px -20px 9px 9px rgba(177, 177, 177, 0.384);
+    background-color:#343a40;
+    color: white;
+  
+    .sidepanel_hirerachy {
+      z-index: 1;
+      overflow-x: hidden;
+    }
+  
+    .sidepanel_member_list {
+      max-height: 100vh;
+    }
+}
+.fixed{
+    
+    color: white;
+    font-weight: 800;
+
+}
+
+.set_Line{
+    // style="display: flex;justify-content: space-between; color: white;  " 
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}

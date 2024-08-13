@@ -1,0 +1,55 @@
+<div class="background-container">
+    <div class="login-box">
+        <div class="ml-2 text-center">
+            <h3 class="font-weight-bold bgs">LOGIN</h3>
+        </div>
+        <div>
+            <form [formGroup]="loginForm">
+                <div>
+                    <div class="number_btn">
+                        <input class="input-box font-weight-bold phone_number_input" formControlName="phonenumber"
+                            placeholder="Phone Number" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g,'')">
+                        <button class="cross_btn active" (click)="changePhoneNumber()" type="button">  {{ isHideshow ? '>' : '>' }}</button>
+                    </div>
+                    <div *ngIf="phonenumber && phonenumber.invalid && phonenumber.touched" class="error-red">
+                        Phone Number is required and must be 10 digits.
+                    </div>
+                </div>
+                <div *ngIf="isHideshow">
+                    <div class="text-center my-4">
+                        <h4 class="font-weight-bold">OTP</h4>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="p-2 numbers">
+                            <input type="text" class="form-control otp-input" #One (keyup)="onDigit($event, null, two)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
+                        </div>
+                        <div class="p-2 numbers">
+                            <input type="text"  class="form-control otp-input" #two (keyup)="onDigit($event, One, three)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
+                        </div>
+                        <div class="p-2">
+                            <input type="text"  class="form-control otp-input" #three (keyup)="onDigit($event,two ,four)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
+                        </div>
+                        <div class="p-2">
+                            <input type="text"  class="form-control otp-input" #four (keyup)="onDigit($event,three,five)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
+                        </div>
+                        <div class="p-2">
+                            <input type="text" class="form-control otp-input" #five (keyup)="onDigit($event, four,six)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" maxlength="1">
+                        </div>
+                        <div class="p-2">
+                            <input type="text" class="form-control otp-input" #six (keyup)="onDigit($event, five, null)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
+                        </div>
+
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="submit" (click)="onSubmit()" class="btn btn_color font-weight-bold">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="text-center pt-5">
+            <p class="font-weight-bold">New to Food Services? <strong class="create_account_text" routerLink="/navbar/add-restaurant" routerLinkActive="active" >Create
+                    Account</strong></p>
+        </div>
+    </div>
+</div>
+

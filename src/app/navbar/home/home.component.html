@@ -1,0 +1,33 @@
+<div class="background-container mt-5">
+    <div>
+      <h1 class="text-light text-center"><b>Food Services</b></h1>
+      <h1 class="text-light text-center"><b>Go For Delicious Restaurant</b></h1>
+    </div>
+    <div class="text-center mt-5">
+      <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
+        <div class="input-container">
+          <img src="../../../assets/search.webp" class="ml-4" alt="icon">
+        <input class="search-set pr-4" type="search" formControlName="search" placeholder="Search Restaurant">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div>
+    <app-add-restaurant></app-add-restaurant>
+  </div>
+
+  <div>
+    <app-login></app-login>
+  </div>
+<div>
+  <app-foods></app-foods>
+</div>
+<div class="mt-5">
+  <app-order-now></app-order-now>
+</div>
+<div>
+  <app-contact-us></app-contact-us>
+</div>
+  
