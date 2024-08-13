@@ -16,5 +16,28 @@
     "LOGIN": "Login",
     "FOOD": "Food",
     "CONTACT_US": "Contact Us",
-    "ORDER_NOW": "Order Now"
+    "ORDER_NOW": "Order Now",
+
+
+    
+  "FOODS": "Foods",
+  "ADD_RESTAURANT": "Add Restaurant",
+  "SIGN_IN": "Sign in",
+  "USEFUL_LINKS": "Useful Links",
+  "AADHAR_ENROLLMENT_CENTRE": "Aadhar Enrollment Centre",
+  "FEEDBACK": "Feedback",
+  "SUBSCRIBE_US": "Subscribe Us",
+  "TERMS_OF_USE": "Terms Of Use",
+  "PRIVACY_POLICY": "Privacy Policy",
+  "HYPERLINKING_POLICY": "Hyperlinking Policy",
+  "COPYRIGHT_POLICY": "Copyright Policy",
+  "SOCIAL_MEDIA_LINKS": "Social Media Links",
+  "INSTAGRAM": "Instagram",
+  "YOUTUBE": "YouTube",
+  "LINKEDIN": "LinkedIn",
+  "WHATSAPP": "WhatsApp",
+  "KHADYA_BHAVAN": "Khadya Bhavan",
+  "ADDRESS": "11A, Mirza Ghalib Street, Kolkata - 700087, West Bengal",
+  "TOLL_FREE": "1800 345 5505 / 1967 (TOLL FREE)",
+  "FOR_SUPPORT_CLICK_HERE": "For Support, Click Here"
   }
