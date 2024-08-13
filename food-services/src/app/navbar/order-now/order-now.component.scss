@@ -1,7 +1,4 @@
-.bg-color {
-    background-color: rgb(59, 59, 59);
 
-}
 .product_img {
     width: 150px; 
     height: 150px; 
@@ -52,12 +49,6 @@
     box-shadow: 4px -20px 9px 9px rgba(177, 177, 177, 0.384);
     background-color:#343a40;
     color: white;
-
-    :host-context(.dark-theme) {
-        .sidepanel{
-        background-color: black;
-        }    
-            }
   
     .sidepanel_hirerachy {
       z-index: 1;
@@ -81,10 +72,3 @@
     justify-content: space-between;
     color: white;
 }
-
-:host-context(.dark-theme) {
-.bg-color{
-background-color: black;
-}    
-    }
-    

@@ -49,12 +49,3 @@
     height: 15px;
     width: 15px; 
 }
-
-:host-context(.dark-theme) {
-    .set-background{
-        background-color: black;
-        color: white;
-    }
-    
-}
-
