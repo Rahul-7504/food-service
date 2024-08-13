@@ -4,6 +4,10 @@
     <form [formGroup]="userForm" class="set_form_data ">
       <h4 class="card-title text-center">Register</h4>
       <div>
+
+
+
+        
         <input type="text" id="OwnerName" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g,'')"
           formControlName="OwnerName" placeholder="Owner Name"
           [ngClass]="{'is-invalid': submitted && userForm.controls.OwnerName.errors}">
