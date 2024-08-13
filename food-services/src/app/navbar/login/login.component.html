@@ -1,7 +1,7 @@
 <div class="background-container">
     <div class="login-box">
         <div class="ml-2 text-center">
-            <h3 class="font-weight-bold">LOGIN</h3>
+            <h3 class="font-weight-bold bgs">LOGIN</h3>
         </div>
         <div>
             <form [formGroup]="loginForm">
@@ -20,10 +20,10 @@
                         <h4 class="font-weight-bold">OTP</h4>
                     </div>
                     <div class="d-flex flex-row justify-content-center">
-                        <div class="p-2">
+                        <div class="p-2 numbers">
                             <input type="text" class="form-control otp-input" #One (keyup)="onDigit($event, null, two)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
                         </div>
-                        <div class="p-2">
+                        <div class="p-2 numbers">
                             <input type="text"  class="form-control otp-input" #two (keyup)="onDigit($event, One, three)" oninput="this.value = this.value.replace(/[^0-9]/g,'')" formControlName="otp" maxlength="1">
                         </div>
                         <div class="p-2">

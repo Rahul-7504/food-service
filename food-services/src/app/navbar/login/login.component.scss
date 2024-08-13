@@ -72,6 +72,22 @@
 }
 
 .phone_number_input {
-    width: 70%; 
+    width: 70%;
     margin-right: 10px;
+}
+
+
+:host-context(.dark-theme) {
+
+
+    .login-box {
+        background-color: black;
+    }
+
+    h3,
+    p,
+    h4 {
+        color: white;
+    }
+
 }

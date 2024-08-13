@@ -1,3 +1,27 @@
-.heading{
-    margin-left:37%;
+.heading {
+    margin-left: 37%;
+}
+
+.bg-clr {
+    background-color: rgb(59, 59, 59);
+}
+.borders{
+    border: 1px solid black;
+}
+
+.bg-color {
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+:host-context(.dark-theme) {
+
+    .bg-clr {
+        background-color: black;
+    }
+
+    .bg-color {
+        background-color: black;
+        color: white;
+    }
 }
