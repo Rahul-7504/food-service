@@ -7,6 +7,11 @@
     display: flex;
 
 }
+.edit_button{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
 
 
 
@@ -19,6 +24,7 @@
   box-shadow: 0 0 10px rgba(212, 6, 6, 0.1);
   float: left;
   margin-left: 20%;
+  background-color: white;
 }
 
 @media (max-width : 750px) {
@@ -60,5 +66,40 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.table-color{
+  background-color: white;
+  color: black;
+}
 
+
+:host-context(.dark-theme) {
+  .set_form_data {
+    background-color: #070707;
+    color: #ffffff;
+    
+    border: 1px solid #555;
+  }
+
+  input {
+    // background-color: #444;
+
+    color: #ffffff;
+    border: 1px solid white;
+  }
+  .edit_button{
+    background-color: white;
+    color: black;
+    border: white;
+  }
+  
+  .add-resgister{
+    background-color: white;
+    color: black;
+  }
+  .table-color{
+    background-color:black;
+    color: white;
+  }
+
+}
 

@@ -51,3 +51,12 @@
 .food-spacing {
     letter-spacing: 1px;
 }
+
+:host-context(.dark-theme) {
+    .navbar {
+      background-color: black !important;
+    }
+    
+
+  }
+  

@@ -26,6 +26,11 @@
         <a routerLink="/navbar/contactUs" class="ml-4" routerLinkActive="active"><b>{{ 'CONTACT_US' | translate
             }}</b></a>
       </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-secondary ml-4" (click)="toggleTheme()">
+          <b>{{ isDarkTheme ? 'Light Mode' : 'Dark Mode' }}</b>
+        </button>
+      </li>
       <li>
         <button type="button" class="setBtn ml-4" routerLink="/navbar/orderNow" routerLinkActive="active"><b>{{
             'ORDER_NOW' | translate }}</b></button>
