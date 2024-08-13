@@ -68,3 +68,12 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #aaa;
   font-size: 16px;
 }
+
+:host-context(.dark-theme) {
+  .bg-color{
+  background-color: black;
+  }    
+      }
+
+      
+      

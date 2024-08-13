@@ -1,51 +1,56 @@
-<div class="container-fluid pt-4 pl-4 pb-0">
-    <div>
-        <div class="d-flex justify-content-between">
-            <p class="mt-2 mb-0 pb-0" style="font-size: 18px;"><b>{{ 'ADD_PRODUCT' | translate }}</b></p>
-            <i (click)="CloseSiderbar()" class="fa-solid fa-circle-xmark" style="cursor: pointer;"></i>
+<div class="bg-color body font">
+
+    <div class="container-fluid pt-4 pl-4 pb-0 ">
+        <div>
+            <div class="d-flex justify-content-between">
+                <p class="mt-2 mb-0 pb-0" style="font-size: 18px;"><b>{{ 'ADD_PRODUCT' | translate }}</b></p>
+                <i (click)="CloseSiderbar()" class="fa-solid fa-circle-xmark" style="cursor: pointer;"></i>
+            </div>
+            <p style="font-size: 12px;" class="mt-0 pt-0">{{ 'ADD_FOOD_TEMPLATE' | translate }}</p>
         </div>
-        <p style="font-size: 12px;" class="mt-0 pt-0">{{ 'ADD_FOOD_TEMPLATE' | translate }}</p>
-    </div>
-
-    <hr style="background-color: white;">
-    <form [formGroup]="productForm">
-        <div class="row mt-4">
-            <div class="col-6">
-                <div>
-                    <label class="font16">{{ 'ENTER_PRODUCT_NAME' | translate }}</label>
-                </div>
-                <input class="form-control input" type="text" placeholder="{{ 'ENTER_PRODUCT_NAME' | translate }}" formControlName="productName" [ngClass]="{'is-invalid':submitted && formOrder?.productName?.errors}">
-                <div *ngIf="submitted && formOrder?.productName?.errors" class="invalid-feedback">
-                    <div *ngIf="submitted && formOrder?.productName?.errors?.required" style="font-weight: 800;">{{ 'PRODUCT_NAME_REQUIRED' | translate }}</div>
-                </div>
-
-                <label class="font16 mt-3">{{ 'ADD_PRODUCT_IMG' | translate }}</label>
-
-                <div class="image-upload-container">
-                    <input type="file" (change)="onFileSelected($event)" accept="image/*" hidden #fileInput>
-                    <div class="image-box" (click)="fileInput.click()">
-                        <img *ngIf="imageUrl" [src]="imageUrl" alt="Uploaded Image">
+    
+        <hr style="background-color: white;">
+        <form [formGroup]="productForm">
+            <div class="row mt-4">
+                <div class="col-6 ">
+                    <div>
+                        <label class="font16">{{ 'ENTER_PRODUCT_NAME' | translate }}</label>
+                    </div>
+                    <input class="form-control input" type="text" placeholder="{{ 'ENTER_PRODUCT_NAME' | translate }}" formControlName="productName" [ngClass]="{'is-invalid':submitted && formOrder?.productName?.errors}">
+                    <div *ngIf="submitted && formOrder?.productName?.errors" class="invalid-feedback">
+                        <div *ngIf="submitted && formOrder?.productName?.errors?.required" style="font-weight: 800;">{{ 'PRODUCT_NAME_REQUIRED' | translate }}</div>
+                    </div>
+    
+                    <label class="font16 mt-3">{{ 'ADD_PRODUCT_IMG' | translate }}</label>
+    
+                    <div class="image-upload-container">
+                        <input type="file" (change)="onFileSelected($event)" accept="image/*" hidden #fileInput>
+                        <div class="image-box" (click)="fileInput.click()">
+                            <img *ngIf="imageUrl" src="../../../assets/" alt="Uploaded Image">
+                        </div>
+                    </div>
+    
+                    <div *ngIf="submitted && formOrder?.imgUpload?.errors" class="invalid-feedback">
+                        <div *ngIf="submitted && formOrder?.imgUpload?.errors?.required" style="font-weight: 800;">{{ 'IMAGE_UPLOAD_REQUIRED' | translate }}</div>
+                    </div>
+                </div> 
+                <div class="col-6">
+                    <div>
+                        <label class="font16">{{ 'ENTER_PRODUCT_PRICE' | translate }}</label>
+                    </div>
+                    <input class="form-control input" type="number" placeholder="{{ 'ENTER_PRODUCT_PRICE' | translate }}" formControlName="productPrice" [ngClass]="{'is-invalid':submitted && formOrder?.productPrice?.errors}">
+                    <div *ngIf="submitted && formOrder?.productPrice?.errors" class="invalid-feedback">
+                        <div *ngIf="submitted && formOrder?.productPrice?.errors?.required" style="font-weight: 800;">{{ 'PRODUCT_PRICE_REQUIRED' | translate }}</div>
                     </div>
                 </div>
-
-                <div *ngIf="submitted && formOrder?.imgUpload?.errors" class="invalid-feedback">
-                    <div *ngIf="submitted && formOrder?.imgUpload?.errors?.required" style="font-weight: 800;">{{ 'IMAGE_UPLOAD_REQUIRED' | translate }}</div>
-                </div>
             </div>
-            <div class="col-6">
-                <div>
-                    <label class="font16">{{ 'ENTER_PRODUCT_PRICE' | translate }}</label>
-                </div>
-                <input class="form-control input" type="number" placeholder="{{ 'ENTER_PRODUCT_PRICE' | translate }}" formControlName="productPrice" [ngClass]="{'is-invalid':submitted && formOrder?.productPrice?.errors}">
-                <div *ngIf="submitted && formOrder?.productPrice?.errors" class="invalid-feedback">
-                    <div *ngIf="submitted && formOrder?.productPrice?.errors?.required" style="font-weight: 800;">{{ 'PRODUCT_PRICE_REQUIRED' | translate }}</div>
-                </div>
+    
+            <div class="btn-footer bg-color">
+                <button (click)="saveData()" class="btn_submit_save mr-4">{{ 'SAVE' | translate }}</button>
+                <button (click)="clearData()" class="btn_submit_save">{{ 'CANCEL' | translate }}</button>
             </div>
-        </div>
+        </form>
+    </div>
+    
 
-        <div class="btn-footer">
-            <button (click)="saveData()" class="btn_submit_save mr-4">{{ 'SAVE' | translate }}</button>
-            <button (click)="clearData()" class="btn_submit_save">{{ 'CANCEL' | translate }}</button>
-        </div>
-    </form>
 </div>
