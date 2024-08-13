@@ -7,12 +7,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent {
-  constructor(private translate: TranslateService) {
-    this.translate.addLangs(['en', 'hi', 'mr']);
-    this.translate.setDefaultLang('en');
-  }
+  // constructor(private translate: TranslateService) {
+  //   this.translate.addLangs(['en', 'hi', 'mr']);
+  //   this.translate.setDefaultLang('en');
+  // }
 
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
-  }
+  // switchLanguage(lang: string) {
+  //   this.translate.use(lang);
+  // }
 }
