@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-order-now',
   templateUrl: './order-now.component.html',
@@ -13,7 +13,7 @@ export class OrderNowComponent {
   selectedplanDetails: undefined;
   memberitems:any =[{},];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router ,private translate: TranslateService) { }
 
   closeSiderbar(event:any){
     if(event){

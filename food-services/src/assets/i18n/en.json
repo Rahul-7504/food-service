@@ -18,8 +18,23 @@
     "CONTACT_US": "Contact Us",
     "ORDER_NOW": "Order Now",
 
+    "ORDER_SOME_GREAT_FOOD": "Order some great food today and enjoy a delicious meal.",
+    "ADD_FOOD": "Add Food",
+      "PRODUCT_NAME": "Product Name",
+      "PIZZA": "Pizza",
+      "BURGER": "Burger",
+      "WELLINGTON": "Wellington",
+      "IDALI": "Idali",
+      "PANEER": "Paneer",
+      "DAAL_BHAAT": "Daal Bhaat",
+      "FISH_CURRY": "Fish Curry",
+      "PRODUCT_PRICE": "Product Price",
+      "RUPEES": "rupees",
+      "ORDER": "Order",
 
-    
+
+
+
   "FOODS": "Foods",
   "ADD_RESTAURANT": "Add Restaurant",
   "SIGN_IN": "Sign in",
