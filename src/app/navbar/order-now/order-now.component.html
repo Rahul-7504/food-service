@@ -1,126 +1,129 @@
 <div class="container-fluid bg-dark">
-    <!-- <div class="mt-2">
-        <button class="margin5 " (click)="openplan()" ><b>Add Food</b></button>
-      
+    <div class="set_Line">
+        <p style="margin-top: 100px;" class="ml-2"><b>{{ 'ORDER_SOME_GREAT_FOOD' | translate }}</b></p>
+        <button (click)="openplan()" class="margin5" style="margin-top: 90px;"><b>{{ 'ADD_FOOD' | translate }}</b></button>
     </div>
-    <div class="">
-        <p  class="fixed pl-2" ><b>Order some great food today and enjoy a delicious meal.</b></p> 
-
-    </div> -->
-    <div class="set_Line" >
-  <p style="margin-top: 100px;" class="ml-2"><b>Order some great food today and enjoy a delicious meal.</b></p>
-  <button (click)="openplan()" class="margin5" style="margin-top: 90px;"><b>Add Food</b> </button>
-    </div>
-
-<div class="row pt-5 ">
-   
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img5.jfif" class="card-img-top product_img " alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : pizza </h6>
-                <h6 class="card-text">Product Price : 199 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
+  
+    <div class="row pt-5">
+        <!-- Product Card 1 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img5.jfif" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                  <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : pizza</h6>
+                  <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 199 | number }} {{ 'RUPEES' | translate }}</h6>
+                  <div class="button-wrapper">
+                      <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product Card 2 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img6.webp" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : Burger</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 99 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product Card 3 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img4.jpg" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : Wellington</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 199 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product Card 4 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img6.webp" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : Burger</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 99 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img6.webp" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : Burger</h6>
-                <h6 class="card-text">Product Price : 99 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
+  
+    <div class="row pt-5 bg-dark">
+        <!-- Product Card 5 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img1.jpg" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : idali</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 40 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product Card 6 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img2.jfif" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : paneer</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 60 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product Card 7 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img3.jfif" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : Daal Bhaat</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 50 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product Card 8 -->
+        <div class="col-sm-3">
+            <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
+                <img src="../../../assets/img4.jpg" class="card-img-top product_img" alt="...">
+                <div class="card-body">
+                    <h6 class="card-text">{{ 'PRODUCT_NAME' | translate }} : fish curry</h6>
+                    <h6 class="card-text">{{ 'PRODUCT_PRICE' | translate }} : {{ 40 | number }} {{ 'RUPEES' | translate }}</h6>
+                    <div class="button-wrapper">
+                        <button class="food_order_btn">{{ 'ORDER' | translate }}</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img4.jpg" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : Wellington</h6>
-                <h6 class="card-text">Product Price : 199 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
-                </div>
-            </div>
+  
+    <div *ngIf="showSidenar">
+        <div class="sidepanel sidepanel_member_list" id="openSidepanel">
+            <app-food-template [isEditMember]="isEditMember" (closeSiderbar)="closeSiderbar($event)"></app-food-template>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img6.webp" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : Burger</h6>
-                <h6 class="card-text">Product Price : 99 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<div class="row  pt-5 bg-dark">
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img1.jpg" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : idali</h6>
-                <h6 class="card-text">Product Price : 40 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img2.jfif" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : paneer</h6>
-                <h6 class="card-text">Product Price : 60 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img3.jfif" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : Daal Bhaat</h6>
-                <h6 class="card-text">Product Price : 50 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
-                </div>
-            </div>
-        </div> 
-    </div>
-    <div class="col-sm-3">
-        <div class="card p-3 m-2" style="width: 18rem; border: 1px solid rgb(146, 144, 144);">
-            <img src="../../../assets/img4.jpg" class="card-img-top product_img" alt="...">
-            <div class="card-body ">
-                <h6 class="card-text">Product Name : fish curry</h6>
-                <h6 class="card-text">Product Price : 40 rupees</h6>
-                <div class="button-wrapper">
-                    <button class="food_order_btn">Order</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div *ngIf="showSidenar">
-    <div class="sidepanel sidepanel_member_list" id="openSidepanel">
-        <app-food-template [isEditMember]="isEditMember" (closeSiderbar)="closeSiderbar($event)"></app-food-template>
-
-    </div>
-
-</div>
-</div>  
+  </div>
+  
