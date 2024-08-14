@@ -1,5 +1,5 @@
 {
-  "FOOD_SERVICES": "FOOD_SERVICES",
+  "FOOD_SERVICES": "Food Services",
   "ADD_PRODUCT": "Add Product",
   "ADD_FOOD_TEMPLATE": "We can add food template here",
   "ENTER_PRODUCT_NAME": "Enter Product Name",
@@ -82,6 +82,19 @@
   "4796830":"4796830",
   "1":"1",
   "2":"2",
-  "3":"3"
+  "3":"3",
+  "GO_FOR_DELICIOUS_RESTAURANT":"Go For delicious Restaurant",
+  "SEARCH_RESTAURANT":"Search Restaurant",
+  "PHONE_NUMBER":"Phone Number",
+  "NEW_TO_FOOD_SERVICES?":"New to Food Services?",
+  "CREATE_ACCOUNT":"Create Account",
+  "NUMBER_VALIDATION":"Phone Number is required and must be 10 digits.",
+  "OTP":"OTP",
+  "LOGINS":"LOGIN",
+  "LOGINSS":"Login"
+ 
+  
+  
+
 
 }
