@@ -1,13 +1,13 @@
 <div class="background-container mt-5">
     <div>
-      <h1 class="text-light text-center"><b>Food Services</b></h1>
-      <h1 class="text-light text-center"><b>Go For Delicious Restaurant</b></h1>
+      <h1 class="text-light text-center"><b>{{'FOOD_SERVICES' | translate}}</b></h1>
+      <h1 class="text-light text-center"><b>{{'GO_FOR_DELICIOUS_RESTAURANT'|translate}}</b></h1>
     </div>
     <div class="text-center mt-5">
       <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
         <div class="input-container">
           <img src="../../../assets/search.webp" class="ml-4" alt="icon">
-        <input class="search-set pr-4" type="search" formControlName="search" placeholder="Search Restaurant">
+        <input class="search-set pr-4" type="search" formControlName="search" placeholder="{{'SEARCH_RESTAURANT' | translate}}">
       </div>
       </form>
     </div>
