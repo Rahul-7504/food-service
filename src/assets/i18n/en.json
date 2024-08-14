@@ -91,10 +91,22 @@
   "NUMBER_VALIDATION":"Phone Number is required and must be 10 digits.",
   "OTP":"OTP",
   "LOGINS":"LOGIN",
-  "LOGINSS":"Login"
- 
+  "LOGINSS":"Login",
   
-  
+    "FAMOUS_FOODS_IN_INDIA": "Famous Foods In India",
+  "FOOD_DESCRIPTION_1": "Combines 2 or more ingredients to produce a homogenous mixture that can be replicated time.",
+  "FOOD_DESCRIPTION_2": "A burger is a patty of ground beef grilled and placed between two halves of a bun.",
+  "FOOD_DESCRIPTION_3": "A popular meal among the Himalayas and is the unofficial national dish of Nepal.",
+  "FOOD_DESCRIPTION_4": "Most burgers at restaurants or fast food outlets contain beef. The beef is ground and shaped into a patty.",
+  "FOOD_DESCRIPTION_5": "A basket, bag, box, or similar container, carried in pairs either slung over the back of a beast of burden, or attached to the sides of a bicycle or motorcycle.",
+  "FOOD_DESCRIPTION_6": "The Bullet Thali is a non-vegetarian platter consisting of around 12 dishes made with 4 kilograms of mutton and fish.",
+  "FOOD_DESCRIPTION_7": "A vegetarian diet is one that does not include any meat or seafood.",
+  "FOOD_DESCRIPTION_8": "Some fresh snacks include watery cucumbers sprinkled with some salt and spices."
+
+
+
+
+
 
 
 }
